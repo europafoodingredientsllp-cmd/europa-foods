@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Europa Foods - Premium Dehydrated Foods &amp; Spices</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#584400",
+                        "on-surface-variant": "#44474c",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#785d00",
+                        "inverse-on-surface": "#f4f0ea",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "surface-container-high": "#ebe8e2",
+                        "secondary-container": "#fed977",
+                        "on-background": "#1c1c18",
+                        "stark-white": "#FFFFFF",
+                        "secondary-fixed": "#ffe08f",
+                        "on-primary-container": "#778598",
+                        "surface-container": "#f1ede7",
+                        "surface-bright": "#fdf9f3",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "surface": "#fdf9f3",
+                        "warm-cream": "#F9F5EF",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000000",
+                        "inverse-primary": "#bac8dc",
+                        "surface-tint": "#525f71",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dddad4",
+                        "outline-variant": "#c4c6cc",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#0f1c2c",
+                        "primary-fixed": "#d6e4f9",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-variant": "#e6e2dc",
+                        "outline": "#74777d",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "primary-container": "#0f1c2c",
+                        "background": "#fdf9f3",
+                        "on-tertiary-container": "#86847f",
+                        "on-surface": "#1c1c18",
+                        "secondary": "#755b00",
+                        "surface-container-highest": "#e6e2dc",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#1c1c18",
+                        "primary-fixed-dim": "#bac8dc",
+                        "inverse-surface": "#31302d",
+                        "deep-navy": "#0D1B2A",
+                        "secondary-fixed-dim": "#e6c364",
+                        "tertiary-fixed": "#e6e2dc",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "champagne-gold": "#C9A84C",
+                        "surface-container-low": "#f7f3ed"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap-mobile": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "section-gap": "120px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "stat-value": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "60px", "fontWeight": "600"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "stat-value": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Marquee Animation */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 20s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Navbar Glassmorphism */
+        .nav-scrolled {
+            background-color: rgba(253, 249, 243, 0.85);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .nav-scrolled {
+            background-color: rgba(28, 28, 24, 0.85);
+        }
+
+        /* WhatsApp Ripple */
+        @keyframes ripple {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            100% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-btn {
+            animation: ripple 2s infinite;
+        }
+        .whatsapp-btn:hover {
+            animation: none;
+            transform: scale(1.05);
+        }
+
+        /* Pulse dots */
+        @keyframes pulse-dot {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(201, 168, 76, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(201, 168, 76, 0); }
+        }
+        .location-dot {
+            animation: pulse-dot 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-transparent dark:bg-transparent sticky top-0 transition-all duration-500 backdrop-blur-md hover:bg-primary-container docked full-width top-0 z-50 border-b border-outline-variant/10 flat no shadows" id="main-nav">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-serif text-on-surface dark:text-on-primary-container tracking-wide font-bold">
+<a href="home.html">Europa Foods</a>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-champagne-gold font-semibold border-b-2 border-champagne-gold pb-1 font-body-md text-body-md tracking-wide" href="home.html">Home</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="products.html">Products</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="qa.html">Quality</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="achievement.html">Achievements</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="shipment.html">Shipments</a>
+</div>
+<div class="hidden md:block">
+<a class="bg-champagne-gold text-deep-navy font-body-md px-6 py-2 rounded shadow-sm hover:opacity-90 transition-opacity inline-block" href="contact.html">Request a Quote</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface dark:text-on-primary-container text-2xl">menu</span>
+</div>
+</div>
+</nav>
+<!-- HERO -->
+<header class="relative w-full min-h-screen flex items-center pt-20 pb-32 reveal">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-deep-navy/60 z-10"></div>
+<!-- <img alt="Full-bleed dramatic spice/harvest field photo" class="w-full h-full object-cover" src="src/home.png"/> -->
+</div>
+<div class="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-stark-white">
+<div class="max-w-3xl">
+<div class="inline-block px-4 py-1 mb-6 bg-champagne-gold/10 border border-champagne-gold/30 rounded font-label-caps text-label-caps text-champagne-gold tracking-widest uppercase">
+                    TRUSTED BY BUYERS ACROSS 15+ COUNTRIES
+                </div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg mb-6 text-stark-white leading-tight">
+                    Premium Dehydrated Foods &amp; Spices — Sourced From Nature, Delivered to the World
+                </h1>
+<p class="font-body-lg text-body-lg text-surface-variant mb-10 max-w-2xl">
+                    30+ years of expertise. Zero chemicals. International certifications. Built for global trade.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-champagne-gold text-deep-navy font-body-md px-8 py-4 rounded font-semibold hover:bg-secondary-fixed transition-colors text-center" href="products.html">
+                        Explore Products
+                    </a>
+<a class="bg-transparent border border-stark-white text-stark-white font-body-md px-8 py-4 rounded hover:bg-stark-white/10 transition-colors text-center" href="contact.html">
+                        Get in Touch
+                    </a>
+</div>
+</div>
+</div>
+<!-- Floating Stats Card -->
+<div class="absolute bottom-0 left-0 right-0 z-30 transform translate-y-1/2 hidden md:block">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-deep-navy/90 backdrop-blur-md border border-outline-variant/20 rounded p-8 flex justify-between items-center shadow-2xl">
+<div class="text-center px-8 border-r border-outline-variant/20 last:border-0 flex-1">
+<div class="font-stat-value text-stat-value text-champagne-gold mb-2">30+</div>
+<div class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest">Years Experience</div>
+</div>
+<div class="text-center px-8 border-r border-outline-variant/20 last:border-0 flex-1">
+<div class="font-stat-value text-stat-value text-champagne-gold mb-2">15+</div>
+<div class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest">Countries</div>
+</div>
+<div class="text-center px-8 border-r border-outline-variant/20 last:border-0 flex-1">
+<div class="font-stat-value text-stat-value text-champagne-gold mb-2">100%</div>
+<div class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest">Chemical Free</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- ABOUT -->
+<section class="py-section-gap-mobile md:py-section-gap bg-warm-cream relative z-10 md:mt-16 reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<img alt="Editorial shot of premium spices" class="w-full h-auto object-cover rounded shadow-lg transition-transform duration-700 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/ADBb0uhAraeKxGAMpL8WBNzWBewniHayMdnFsRz_g9sBFGOSZZr0dcyRTv10auPNhiJ-QXai31Nlzk49BRx0K-bSf-5Nka6Y-PAzf9yv9nwTEMiJlQbXmrBraQs5BnGZ98SuTOxuoF5H2PhDkkmiB2G-l5bRgmg-ZcX9gAXoH0Q7y6uymhITZ5Ym2IbEQzkwlr8p6Qnm1gn806bNh-I-RtY6g455b2xoprhdveMIqHIq5y7bq7sb5-LKbD0VOKzj"/>
+<div class="absolute inset-0 border border-deep-navy/10 rounded mix-blend-multiply pointer-events-none"></div>
+</div>
+<div>
+<h2 class="font-headline-xl text-headline-xl text-deep-navy mb-8">Three Decades of Excellence</h2>
+<ul class="space-y-6 mb-10">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-champagne-gold mr-4 text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-deep-navy">100% Pesticide Free</h3>
+<p class="text-on-surface-variant mt-1">Sourced directly from certified organic farms.</p>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-champagne-gold mr-4 text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-deep-navy">Zero Sulphites/Chlorates</h3>
+<p class="text-on-surface-variant mt-1">Pure, unadulterated natural ingredients.</p>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-champagne-gold mr-4 text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-deep-navy">FIFO Storage</h3>
+<p class="text-on-surface-variant mt-1">First-In, First-Out inventory management for optimal freshness.</p>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-champagne-gold mr-4 text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-deep-navy">International Standards</h3>
+<p class="text-on-surface-variant mt-1">Meeting rigorous global quality requirements.</p>
+</div>
+</li>
+</ul>
+<a class="inline-flex items-center text-deep-navy font-semibold hover:text-champagne-gold transition-colors font-body-lg text-body-lg group" href="about.html">
+                        Discover Our Story 
+                        <span class="material-symbols-outlined ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- STATS BANNER -->
+<section class="bg-deep-navy py-16 md:hidden reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="grid grid-cols-2 gap-8 text-center">
+<div>
+<div class="font-stat-value text-stat-value text-champagne-gold mb-1">30+</div>
+<div class="font-label-caps text-label-caps text-surface-variant uppercase">Years</div>
+</div>
+<div>
+<div class="font-stat-value text-stat-value text-champagne-gold mb-1">15+</div>
+<div class="font-label-caps text-label-caps text-surface-variant uppercase">Countries</div>
+</div>
+<div>
+<div class="font-stat-value text-stat-value text-champagne-gold mb-1">5</div>
+<div class="font-label-caps text-label-caps text-surface-variant uppercase">Categories</div>
+</div>
+<div>
+<div class="font-stat-value text-stat-value text-champagne-gold mb-1">100%</div>
+<div class="font-label-caps text-label-caps text-surface-variant uppercase">Pure</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRODUCTS -->
+<section class="py-section-gap-mobile md:py-section-gap bg-stark-white reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-xl text-headline-xl text-deep-navy mb-16 text-center">What We Offer</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer" onclick="window.location.href='products.html'">
+<img alt="Dehydrated Vegetables" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uil-besbhI09R0u54Rrjs4Jl2F9PC6mz3mRI_Se8yj4fCrp6_xCZ8BWXDqiULbMaeopo0DIfQw69N9R7e91kVajgyOq9FKxM6fmnwJyX3nO_RYjfwj3DzCdgrTDU9iRBthHfYLYMFlY0wMsQIaMEOfJJ3jYMwQfiPfZrlpVpaHh1_kAv6ZAUazZSHoobMnhSAVesj-0GiYGsvdeMUZQWKhZhoHxsDa7tkT3YQ1EebPBRT3WXyPkzWq_XPzp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline-md text-headline-md text-stark-white mb-2">Dehydrated Vegetables</h3>
+<p class="text-surface-variant opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 font-body-md text-body-md">Premium quality dehydrated produce preserving essential nutrients and flavor.</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer" onclick="window.location.href='products.html'">
+<div class="absolute inset-0 bg-black/10" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uguNOfuDNq32MKnKBkK7RU5F34oz8zywm1sIf3dKGvU563icjg0RsSz5BqUFDf1wITfPMrosvY1GTblHbmLOWtgo99aZC2HIdEnRMYHqh7nBo2FBZjzVhhJr8sZLkILcZ3j1ToZ5XwGp8gTY67a4KjLqFECHPuG1fOO3ROPFiEOynF69QWjI9oaNtllytupLFf7uVEvgpnpMF6GWHVVckmdLHUSFmoZDNiNShg0t6E5HzVhWsXEVbg6Dok4'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline-md text-headline-md text-stark-white mb-2">Indian Spices</h3>
+<p class="text-surface-variant opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 font-body-md text-body-md">Authentic, aromatic spices sourced from the finest Indian regions.</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer" onclick="window.location.href='products.html'">
+<div class="absolute inset-0 bg-black/10" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uiArWmXunhhWSivbaoZEPzpXxyu9nlte5plX6OPqMEgfSQgabbfEd30Uo7iMQ2anz-YsCcb-QQ5Ngoqbwb2CyN289W0d_seVjm0Gs8W1o5yemqJmBWww9V7pNoyfrM8gJGK7dGj6wDUc9sxSuX2HwLfQ5iSqobrH2rdTiflOVC5e7T04QTJPHS3dQyz8WRWLF_DnUl_3A7R913FVthB_faSD2FTStSuQby1Oe1c_bxsjxkGbGYoVDzc-fA'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline-md text-headline-md text-stark-white mb-2">Organic Spices</h3>
+<p class="text-surface-variant opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 font-body-md text-body-md">Certified organic spices for purity and exceptional taste.</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer lg:col-span-1 lg:col-start-2" onclick="window.location.href='products.html'">
+<img alt="Organic Herbs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ugPMKmH4fZucdu2olkuoAJXo_U18zftHu0_cGHRtp1qFT4VuJbENEjfqcPEfZ5HzKwH7sA2QtJgt0naF2tpp_LKqv_J3GS8fsgLQA09TUP-0NOPZ0vA95hPaLZEZ4uy77vNpeMpw1Gcw-ion-N6acRixIPvvkOWyPuJSSoOx3qeyuArazHGqr-OGdNTG4w92gA-UbxKZZFuZEle6u-Oz0MIjzst0pqP7KRL9t-A_06hPdtRcYAPbJfpveI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline-md text-headline-md text-stark-white mb-2">Organic Herbs</h3>
+<p class="text-surface-variant opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 font-body-md text-body-md">Carefully harvested organic herbs offering natural freshness.</p>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer lg:col-span-1" onclick="window.location.href='products.html'">
+<img alt="Spray Dried Powders" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uho1ekKhk5bhleRjiyq8-hwMDm5Io4I6x1DMYwi88EUiSSJpRomHpEEJF-gDiv7zacZNMfXRpbfmaOkVi9IHB55sQ-MCsD1l8EW7_tIf1CwwSyUHbbrccEMoRkIKolMwmJuMLe9StD3u1Z-kpBPVw5jlh7ksKvqbbo7ufcSoTwW30WEzqgHn3ejxCPiUXn74swCqVZmE0wnNwqznuu1OxAx6-6ib3HBkVk_T7hydXuzD-38NgLYlPKLpnY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline-md text-headline-md text-stark-white mb-2">Spray Dried Powders</h3>
+<p class="text-surface-variant opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 font-body-md text-body-md">High-quality soluble powders for versatile food applications.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUALITY -->
+<section class="py-section-gap-mobile md:py-section-gap bg-deep-navy text-stark-white reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="inline-block px-4 py-1 mb-6 border border-champagne-gold/30 rounded font-label-caps text-label-caps text-champagne-gold tracking-widest uppercase">
+                        Our Promise
+                    </div>
+<h2 class="font-headline-xl text-headline-xl mb-8">Quality Is Not a Feature — It's Our Foundation</h2>
+<p class="font-body-lg text-body-lg text-surface-variant mb-10">We adhere to the strictest global standards to ensure every batch meets your exact specifications.</p>
+</div>
+<div class="space-y-8">
+<div class="bg-surface-tint/10 p-8 rounded border border-outline-variant/10 hover:border-champagne-gold/50 transition-colors">
+<h3 class="font-headline-md text-headline-md text-champagne-gold mb-3 flex items-center">
+<span class="material-symbols-outlined mr-3">manage_search</span> Traceability
+                        </h3>
+<p class="text-surface-variant font-body-md text-body-md">Complete transparency from farm to facility, ensuring every product can be traced back to its origin.</p>
+</div>
+<div class="bg-surface-tint/10 p-8 rounded border border-outline-variant/10 hover:border-champagne-gold/50 transition-colors">
+<h3 class="font-headline-md text-headline-md text-champagne-gold mb-3 flex items-center">
+<span class="material-symbols-outlined mr-3">science</span> Lab-Tested
+                        </h3>
+<p class="text-surface-variant font-body-md text-body-md">Rigorous analytical testing for purity, microbiological safety, and chemical residues.</p>
+</div>
+<div class="bg-surface-tint/10 p-8 rounded border border-outline-variant/10 hover:border-champagne-gold/50 transition-colors">
+<h3 class="font-headline-md text-headline-md text-champagne-gold mb-3 flex items-center">
+<span class="material-symbols-outlined mr-3">ac_unit</span> Cold Chain / FIFO
+                        </h3>
+<p class="text-surface-variant font-body-md text-body-md">Strict temperature control and inventory management to preserve optimal quality and freshness.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CERTIFICATIONS MARQUEE -->
+<section class="py-12 bg-warm-cream border-b border-outline-variant/10 overflow-hidden reveal">
+<div class="animate-marquee flex items-center whitespace-nowrap">
+<!-- Group 1 -->
+<div class="flex items-center justify-around w-1/2 px-4 space-x-16">
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">FDA Approved</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">FSSAI Certified</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">APEDA</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">Spices Board</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">IOPEPC</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">FIEO</span>
+</div>
+<!-- Group 2 (Duplicate for smooth scroll) -->
+<div class="flex items-center justify-around w-1/2 px-4 space-x-16">
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">FDA Approved</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">FSSAI Certified</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">APEDA</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">Spices Board</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">IOPEPC</span>
+<span class="font-headline-md text-deep-navy/40 font-bold tracking-widest text-2xl uppercase">FIEO</span>
+</div>
+</div>
+</section>
+<!-- GLOBAL FOOTPRINT -->
+<section class="py-section-gap-mobile md:py-section-gap bg-surface reveal relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+<h2 class="font-headline-xl text-headline-xl text-deep-navy mb-4">Trusted by Companies and Entrepreneurs Throughout the World</h2>
+<p class="font-body-lg text-body-lg text-surface-variant mb-16 max-w-3xl mx-auto">Delivering premium quality dehydrated foods and spices to global markets with unwavering reliability.</p>
+<div class="relative w-full max-w-5xl mx-auto aspect-[2/1] bg-deep-navy/5 rounded-xl border border-outline-variant/20 overflow-hidden shadow-inner">
+<!-- Simulated World Map Background -->
+<div class="absolute inset-0 opacity-30 bg-[url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')] bg-no-repeat bg-center bg-contain mix-blend-multiply"></div>
+<!-- Pulsating Dots -->
+<div class="absolute top-[30%] left-[20%] w-3 h-3 bg-champagne-gold rounded-full location-dot"></div>
+<div class="absolute top-[40%] left-[45%] w-3 h-3 bg-champagne-gold rounded-full location-dot" style="animation-delay: 0.5s;"></div>
+<div class="absolute top-[25%] left-[50%] w-3 h-3 bg-champagne-gold rounded-full location-dot" style="animation-delay: 1s;"></div>
+<div class="absolute top-[35%] left-[75%] w-3 h-3 bg-champagne-gold rounded-full location-dot" style="animation-delay: 0.2s;"></div>
+<div class="absolute top-[60%] left-[80%] w-3 h-3 bg-champagne-gold rounded-full location-dot" style="animation-delay: 0.8s;"></div>
+<div class="absolute top-[70%] left-[30%] w-3 h-3 bg-champagne-gold rounded-full location-dot" style="animation-delay: 1.2s;"></div>
+<div class="absolute top-[45%] left-[60%] w-3 h-3 bg-champagne-gold rounded-full location-dot" style="animation-delay: 0.6s;"></div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-tertiary-container dark:bg-primary-container text-stark-white font-body-md text-body-md rounded-none border-t border-outline-variant/5 flat no shadows reveal">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-champagne-gold mb-6 font-serif">Europa Foods</div>
+<p class="text-on-tertiary-container mb-6">Premium Dehydrated Foods &amp; Spices for the Global Market.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="home.html">Home</a></li>
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="about.html">About</a></li>
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="qa.html">Quality</a></li>
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest mb-6">Products</h4>
+<ul class="space-y-4">
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="products.html">Dehydrated Vegetables</a></li>
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="products.html">Indian Spices</a></li>
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="products.html">Organic Herbs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest mb-6">Contact Info</h4>
+<ul class="space-y-4">
+<li class="text-on-tertiary-container">info@europafoods.com</li>
+<li class="text-on-tertiary-container">+1 234 567 8900</li>
+<li><a class="text-on-tertiary-container hover:text-stark-white transition-colors hover:translate-x-1 transition-transform duration-200 inline-block hover:text-champagne-gold" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 px-margin-desktop py-8 max-w-container-max mx-auto text-center md:text-left text-on-tertiary-container text-sm">
+            © 2024 Europa Foods Global Exports. All rights reserved.
+        </div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-stark-white p-4 rounded-full shadow-lg flex items-center justify-center whatsapp-btn transition-all duration-300 group" href="#">
+<span class="material-symbols-outlined text-3xl">chat</span>
+<span class="max-w-0 overflow-hidden whitespace-nowrap opacity-0 group-hover:max-w-[200px] group-hover:opacity-100 group-hover:ml-3 transition-all duration-500 ease-in-out font-body-md font-semibold text-sm">
+        Inquire on WhatsApp
+    </span>
+</a>
+<script>
+    // Reveal Animations
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 100;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal(); // Trigger on load
+
+    // Navbar Glassmorphism
+    var navbar = document.getElementById("main-nav");
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add("nav-scrolled");
+            navbar.classList.remove("bg-transparent");
+        } else {
+            navbar.classList.remove("nav-scrolled");
+            navbar.classList.add("bg-transparent");
+        }
+    });
+</script>
+</body></html>

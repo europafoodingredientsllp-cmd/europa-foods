@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Europa Foods - Products</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#e6c364",
+                        "primary-fixed-dim": "#bac8dc",
+                        "inverse-on-surface": "#f4f0ea",
+                        "primary-fixed": "#d6e4f9",
+                        "stark-white": "#FFFFFF",
+                        "outline-variant": "#c4c6cc",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "on-primary-container": "#778598",
+                        "inverse-surface": "#31302d",
+                        "on-error-container": "#93000a",
+                        "champagne-gold": "#C9A84C",
+                        "on-primary-fixed": "#0f1c2c",
+                        "surface-variant": "#e6e2dc",
+                        "surface-tint": "#525f71",
+                        "on-surface-variant": "#44474c",
+                        "surface-container-highest": "#e6e2dc",
+                        "primary": "#000000",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "surface": "#fdf9f3",
+                        "tertiary-container": "#1c1c18",
+                        "warm-cream": "#F9F5EF",
+                        "inverse-primary": "#bac8dc",
+                        "tertiary-fixed": "#e6e2dc",
+                        "secondary-fixed": "#ffe08f",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "on-surface": "#1c1c18",
+                        "surface-container-low": "#f7f3ed",
+                        "surface-container": "#f1ede7",
+                        "on-secondary-fixed-variant": "#584400",
+                        "primary-container": "#0f1c2c",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "tertiary": "#000000",
+                        "deep-navy": "#0D1B2A",
+                        "on-secondary-container": "#785d00",
+                        "on-tertiary-container": "#86847f",
+                        "secondary": "#755b00",
+                        "surface-dim": "#dddad4",
+                        "surface-bright": "#fdf9f3",
+                        "outline": "#74777d",
+                        "secondary-container": "#fed977",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fdf9f3",
+                        "surface-container-high": "#ebe8e2",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#c9c6c0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "section-gap-mobile": "64px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "stat-value": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "stat-value": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "60px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stark-white text-on-surface antialiased">
+<!-- Top Navigation on Dark Navy Background context -->
+<div class="bg-deep-navy">
+<nav class="bg-transparent dark:bg-transparent sticky top-0 transition-all duration-500 backdrop-blur-md hover:bg-primary-container font-body-md text-body-md tracking-wide docked full-width top-0 z-50 border-b border-outline-variant/10 flat no shadows flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto text-on-surface dark:text-on-primary-container">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md font-serif text-stark-white dark:text-on-primary-container">Europa Foods</span>
+</div>
+<ul class="hidden md:flex items-center gap-8">
+<li><a class="text-on-surface-variant text-stark-white/80 hover:text-champagne-gold transition-colors" href="home.html">Home</a></li>
+<li><a class="text-on-surface-variant text-stark-white/80 hover:text-champagne-gold transition-colors" href="about.html">About</a></li>
+<!-- Active Navigation -->
+<li><a class="text-champagne-gold font-semibold border-b-2 border-champagne-gold pb-1 Active: opacity-80 scale-95 transition-all" href="products.html">Products</a></li>
+<li><a class="text-on-surface-variant text-stark-white/80 hover:text-champagne-gold transition-colors" href="qa.html">Quality</a></li>
+<li><a class="text-on-surface-variant text-stark-white/80 hover:text-champagne-gold transition-colors" href="achievement.html">Achievements</a></li>
+<li><a class="text-on-surface-variant text-stark-white/80 hover:text-champagne-gold transition-colors" href="shipment.html">Shipments</a></li>
+</ul>
+<div class="hidden md:flex items-center">
+<a class="bg-champagne-gold text-deep-navy font-label-caps text-label-caps px-6 py-3 rounded uppercase tracking-wider hover:bg-secondary-fixed-dim transition-colors no-underline" href="contact.html">
+                    Request a Quote
+                </a>
+</div>
+<button class="md:hidden text-stark-white flex items-center">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<!-- Hero Section for Products -->
+<header class="relative overflow-hidden w-full px-margin-mobile md:px-margin-desktop py-24 md:py-32 max-w-container-max mx-auto">
+<div class="absolute inset-0 bg-deep-navy/70"></div>
+<div class="relative z-10 max-w-3xl">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-stark-white mb-6">Our Premium <br/><span class="text-champagne-gold">Product Catalog</span></h1>
+<p class="font-body-lg text-body-lg text-stark-white/80 max-w-2xl">
+                    Explore our comprehensive selection of high-end export agricultural goods. From vibrant dehydrated vegetables to aromatic Indian spices and pristine organic herbs, every product meets rigorous European standards for unmatched quality.
+                </p>
+</div>
+</header>
+</div>
+<main class="bg-warm-cream">
+<!-- Dehydrated Vegetables Section -->
+<section class="py-section-gap-mobile md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-deep-navy mb-4">Dehydrated Vegetables</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                        Preserved at the peak of freshness to retain robust flavor profiles, vibrant colors, and essential nutritional integrity for culinary and industrial applications.
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<article class="group bg-stark-white border border-deep-navy/10 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Dehydrated Red Onions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Close-up macro photography of premium dehydrated red onion flakes resting on a slate surface. The lighting is dramatic and cinematic, creating high-contrast shadows that highlight the artisanal texture and deep purple hues of the onions. The composition is clean, sophisticated, and suitable for a high-end food export editorial catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxtPSmBf04nHuslPDoGosYPSd_zYahJEEZIT51waz8_vbuYxxaY3kxBZd7AI2CQj3x4SOXeoLiOEAaLpEUMdBT12LJKjbKzV1m-rFATAuryayIK5FyrGnTddNEIqFt5W7hlXFQMIfeobHDlYIy4T86-ZgO7a8phPfAwtl5ImtuxYH8NpBdqBfqIReivsivennQrAdACd2wroF0AdzGmBmlfiydwozD3TucSwJAdzFJ8q-nhK2uVBXy4aT5rgUncDHaDLta0DAypMxn"/>
+<div class="absolute inset-0 bg-deep-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
+<div class="absolute top-4 left-4 bg-stark-white/90 backdrop-blur px-3 py-1 font-label-caps text-label-caps text-deep-navy uppercase">Premium Grade</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Red Onion Flakes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Rich, pungent aroma and deep color profile. Sourced from optimal winter crops for maximum flavor retention.</p>
+<div class="border-t border-deep-navy/10 pt-4 mb-6">
+<ul class="space-y-2 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<li class="flex justify-between"><span>Origin:</span> <span class="text-deep-navy font-semibold">India</span></li>
+<li class="flex justify-between"><span>Packaging:</span> <span class="text-deep-navy font-semibold">14kg / 20kg Cartons</span></li>
+<li class="flex justify-between"><span>Moisture:</span> <span class="text-deep-navy font-semibold">&lt; 6% Max</span></li>
+</ul>
+</div>
+<button class="w-full border border-deep-navy text-deep-navy font-label-caps text-label-caps px-4 py-3 uppercase tracking-wider hover:bg-deep-navy hover:text-stark-white transition-colors">
+                            Request Specs
+                        </button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group bg-stark-white border border-deep-navy/10 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Dehydrated Garlic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Artisanal macro shot of dehydrated white garlic cloves and granules scattered elegantly on a dark rustic background. The high-key soft white lighting perfectly balances the creamy white tones of the garlic. The mood is pristine and authoritative, utilizing a fixed-width editorial grid aesthetic to convey European luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQgzVxSij57cU0Q_xo5G_9FjL-A6FwMp3doFgTJocdnRKvacya93jfPGSm3KP7gP6KlMmKe5xK0ft7sTLAvKvzgGXg8E1FiS3b1uSYq5iCdnV-Ir59EqYzD7svpikQFTZS2OoJxx0COkgezoI7aJPQwfAyCnXqYep45zGi2vmVj8-9-PE2lRRJtVBXppI0MoLOWmrzsc4DElyyit0sjC8XMAn06PKtao_HazVJyf9xOb4_sXcxdKCbSc3uf0wJQasKVSvXCv5L2-da"/>
+<div class="absolute inset-0 bg-deep-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Garlic Cloves &amp; Minced</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">A-Grade white garlic, carefully dehydrated to maintain its robust essential oils and sharp, authentic taste.</p>
+<div class="border-t border-deep-navy/10 pt-4 mb-6">
+<ul class="space-y-2 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<li class="flex justify-between"><span>Origin:</span> <span class="text-deep-navy font-semibold">India</span></li>
+<li class="flex justify-between"><span>Packaging:</span> <span class="text-deep-navy font-semibold">25kg Paper Bags</span></li>
+<li class="flex justify-between"><span>Moisture:</span> <span class="text-deep-navy font-semibold">&lt; 6% Max</span></li>
+</ul>
+</div>
+<button class="w-full border border-deep-navy text-deep-navy font-label-caps text-label-caps px-4 py-3 uppercase tracking-wider hover:bg-deep-navy hover:text-stark-white transition-colors">
+                            Request Specs
+                        </button>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group bg-stark-white border border-deep-navy/10 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Dehydrated Bell Peppers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A sophisticated overhead view of vibrant green dehydrated bell pepper dices placed on pure white parchment paper. The cinematic lighting emphasizes the rich, saturated green color of the vegetable. The minimalist, high-contrast B2B aesthetic gives a sense of supreme quality, purity, and precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe7lldeZj8kPY83LjrK-kTc3VQqkwVRFmc6vyFzbqQtyihDufPgORgjvfnmseJoysNBnTTyeK2XO6G9Vb06zi6X2Cd-zcUF3lUDMR6oRySUZhaljWlG3twCgvh6ksIQh4wA7XAGNXug-50LAmzM-gJD_ZchIi5uHmD_zUhFZqSByr-i6EX9arA0xv-K3ox0pcLkcT57j53iHSL7kiAUrOjvfICCyMpO_FpepDPYyAnMWrIy--2eU50CvJz3q1wDvfyp0y1sONsU0aB"/>
+<div class="absolute inset-0 bg-deep-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Green Bell Pepper Dices</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Vibrantly colored bell pepper pieces with a sweet, concentrated flavor ideal for soups, sauces, and ready-meals.</p>
+<div class="border-t border-deep-navy/10 pt-4 mb-6">
+<ul class="space-y-2 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<li class="flex justify-between"><span>Origin:</span> <span class="text-deep-navy font-semibold">India</span></li>
+<li class="flex justify-between"><span>Packaging:</span> <span class="text-deep-navy font-semibold">10kg / 15kg Cartons</span></li>
+<li class="flex justify-between"><span>Size:</span> <span class="text-deep-navy font-semibold">9x9 mm</span></li>
+</ul>
+</div>
+<button class="w-full border border-deep-navy text-deep-navy font-label-caps text-label-caps px-4 py-3 uppercase tracking-wider hover:bg-deep-navy hover:text-stark-white transition-colors">
+                            Request Specs
+                        </button>
+</div>
+</article>
+</div>
+</section>
+<!-- Indian Spices Section -->
+<section class="py-section-gap-mobile md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-deep-navy mb-4">Indian Spices</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                        Sourced directly from generational farmers. Our whole and ground spices deliver intense aromatic compounds and unmatched purity for the discerning global market.
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<article class="group bg-stark-white border border-deep-navy/10 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Black Pepper" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A moody, cinematic shot of high-quality whole black peppercorns spilling out of a rustic burlap sack onto a dark wooden table. The lighting is deep and directional, showcasing the texture and spherical shape of the pepper. The composition exudes luxury, heritage, and uncompromising quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7aqi6E7IALop0FlLNJCPXgecqydmFLGumG8dOYU_6deQcoBw2xHQb-P4d5g_qCmoimpFloIjBJcBvO6d_fCXSg4UfqQVnVmFz6DQqccBhJ96MzHVtcg2jHgO2XIjqqGGiYInBgc_Y_dU-T_-n50h2aW0FvrbDMpgKig3Wc-NcaJWdwnV22YLJIdcc7u_4zFWnFlEeyOD7kn4xD0m9tKePfUIv-0YSqRMQlcwx4xU77H5hJA4ij0fvGxbAC80hoDRYBFNvZeXysFSh"/>
+<div class="absolute inset-0 bg-deep-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
+<div class="absolute top-4 left-4 bg-champagne-gold/90 backdrop-blur px-3 py-1 font-label-caps text-label-caps text-deep-navy uppercase">Best Seller</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Tellicherry Black Pepper</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">The world's finest black pepper, known for its large size, rich essential oils, and complex, warm heat profile.</p>
+<div class="border-t border-deep-navy/10 pt-4 mb-6">
+<ul class="space-y-2 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<li class="flex justify-between"><span>Grade:</span> <span class="text-deep-navy font-semibold">TGEB / TGSEB</span></li>
+<li class="flex justify-between"><span>Packaging:</span> <span class="text-deep-navy font-semibold">25kg PP Bags</span></li>
+<li class="flex justify-between"><span>Density:</span> <span class="text-deep-navy font-semibold">550+ GL</span></li>
+</ul>
+</div>
+<button class="w-full border border-deep-navy text-deep-navy font-label-caps text-label-caps px-4 py-3 uppercase tracking-wider hover:bg-deep-navy hover:text-stark-white transition-colors">
+                            Request Specs
+                        </button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group bg-stark-white border border-deep-navy/10 flex flex-col">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Turmeric Powder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Macro photography of vibrant golden turmeric powder piled meticulously on a pristine white surface. A single whole turmeric root rests beside it. The lighting is soft but high-contrast, bringing out the intense champagne-gold and yellow tones of the spice. The mood is minimalist, clean, and highly professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhk9_26u4a4YOMhZpILWA2Bv-EIUPmJ7CmpBySU9TSfWlF0pmctAD5oSytlzG6o9FLVY0p64CmOQJMs8dtwJSuD-KJU2GXyA4N-wznJblOFKQ78Xn_9uYr6TG2jv8jApItugoPiGItBq6Aqt637ewZCr_3LL_guaVUQu2C8uBs_zDUPmBnGlTQiMCnP4HDmwbE7A-kE__DFfmeXdc7qwTEMOotEaKqQGmy8zAxeRbdLfjpmMJcful1an2M3cH3Nn2rP_Wl2hlUoroT"/>
+<div class="absolute inset-0 bg-deep-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Alleppey Turmeric Fingers &amp; Powder</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Renowned for its exceptionally high curcumin content, offering a bright golden hue and a deep, earthy flavor.</p>
+<div class="border-t border-deep-navy/10 pt-4 mb-6">
+<ul class="space-y-2 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<li class="flex justify-between"><span>Curcumin:</span> <span class="text-deep-navy font-semibold">3% - 5%</span></li>
+<li class="flex justify-between"><span>Packaging:</span> <span class="text-deep-navy font-semibold">25kg Paper/PP Bags</span></li>
+<li class="flex justify-between"><span>Form:</span> <span class="text-deep-navy font-semibold">Fingers / 60 Mesh Powder</span></li>
+</ul>
+</div>
+<button class="w-full border border-deep-navy text-deep-navy font-label-caps text-label-caps px-4 py-3 uppercase tracking-wider hover:bg-deep-navy hover:text-stark-white transition-colors">
+                            Request Specs
+                        </button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary-container dark:bg-primary-container text-stark-white font-body-md text-body-md rounded-none border-t border-outline-variant/5 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-champagne-gold mb-6">Europa Foods</div>
+<p class="text-on-tertiary-container mb-6">Premium agricultural exports, bringing European luxury standards to the finest global ingredients.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-champagne-gold uppercase tracking-widest mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-on-tertiary-container hover:text-champagne-gold hover:translate-x-1 transition-transform duration-200 inline-block" href="home.html">Home</a></li>
+<li><a class="text-on-tertiary-container hover:text-champagne-gold hover:translate-x-1 transition-transform duration-200 inline-block" href="about.html">About Us</a></li>
+<li><a class="text-champagne-gold underline hover:translate-x-1 transition-transform duration-200 inline-block" href="products.html">Products</a></li>
+<li><a class="text-on-tertiary-container hover:text-champagne-gold hover:translate-x-1 transition-transform duration-200 inline-block" href="qa.html">Quality</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-champagne-gold uppercase tracking-widest mb-6">Contact Info</h4>
+<ul class="space-y-4 text-on-tertiary-container">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-champagne-gold text-sm mt-1">location_on</span>
+<span>123 Export Avenue,<br/>Global Trade District,<br/>Mumbai, India</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-champagne-gold text-sm">mail</span>
+<span>inquiry@europafoods.com</span>
+</li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-champagne-gold uppercase tracking-widest mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-tertiary-container hover:text-champagne-gold hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-on-tertiary-container hover:text-champagne-gold hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-on-tertiary-container">
+<p>© 2024 Europa Foods Global Exports. All rights reserved.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a aria-label="Contact us on WhatsApp" class="fixed bottom-8 right-8 z-50 bg-champagne-gold text-deep-navy w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined filled text-2xl">forum</span>
+</a>
+</body></html>
