@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
-app.post('/send-contact', async (req, res) => {
+app.post(['/send-contact', '/api/send-contact'], async (req, res) => {
   const { firstName, lastName, companyName, email, inquiryType, message } = req.body;
 
   if (!firstName || !lastName || !companyName || !email || !inquiryType || !message) {
