@@ -174,24 +174,24 @@
 <body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
 <!-- TopNavBar -->
 <nav class="bg-transparent dark:bg-transparent sticky top-0 transition-all duration-500 backdrop-blur-md hover:bg-primary-container docked full-width top-0 z-50 border-b border-outline-variant/10 flat no shadows" id="main-nav">
-<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 md:py-6 max-w-container-max mx-auto">
 <div class="font-headline-md text-headline-md font-serif text-on-surface dark:text-on-primary-container tracking-wide font-bold">
 <a href="home.html">Europa Foods</a>
 </div>
 <div class="hidden md:flex space-x-8">
 <a class="text-champagne-gold font-semibold border-b-2 border-champagne-gold pb-1 font-body-md text-body-md tracking-wide" href="home.html">Home</a>
-<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="products.html">Products</a>
-<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="qa.html">Quality</a>
-<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="achievement.html">Achievements</a>
-<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide hover:text-champagne-gold transition-all duration-300" href="shipment.html">Shipments</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide transition-all duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide transition-all duration-300" href="products.html">Products</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide transition-all duration-300" href="qa.html">Quality</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide transition-all duration-300" href="achievement.html">Achievements</a>
+<a class="text-on-surface-variant hover:text-champagne-gold transition-colors font-body-md text-body-md tracking-wide transition-all duration-300" href="shipment.html">Shipments</a>
 </div>
 <div class="hidden md:block">
 <a class="bg-champagne-gold text-deep-navy font-body-md px-6 py-2 rounded shadow-sm hover:opacity-90 transition-opacity inline-block" href="contact.html">Request a Quote</a>
 </div>
-<div class="md:hidden">
-<span class="material-symbols-outlined text-on-surface dark:text-on-primary-container text-2xl">menu</span>
-</div>
+<button class="md:hidden p-1">
+<span class="material-symbols-outlined text-on-surface dark:text-on-primary-container text-3xl">menu</span>
+</button>
 </div>
 </nav>
 <!-- HERO -->
@@ -328,7 +328,7 @@
 </div>
 <!-- Product 2 -->
 <div class="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer" onclick="window.location.href='products.html'">
-<div class="absolute inset-0 bg-black/10" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uguNOfuDNq32MKnKBkK7RU5F34oz8zywm1sIf3dKGvU563icjg0RsSz5BqUFDf1wITfPMrosvY1GTblHbmLOWtgo99aZC2HIdEnRMYHqh7nBo2FBZjzVhhJr8sZLkILcZ3j1ToZ5XwGp8gTY67a4KjLqFECHPuG1fOO3ROPFiEOynF69QWjI9oaNtllytupLFf7uVEvgpnpMF6GWHVVckmdLHUSFmoZDNiNShg0t6E5HzVhWsXEVbg6Dok4'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black/10" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uguNOfuDNq32MKnKBkK7RU5F34oz8zywm1sIf3dKGvU563icjg0RsSz5BqUFDf1wITfPMrosvY1GTblHbmLOWtgo99aZC2HIdEnRMYHqh7nBo2FBZjzVhhJr8sZLkILcZ3j1ToZ5XwGp8gTY67a4KjLqFECHPuG1fOO3ROPFiEOynF69QWjI9oaNtllytupLFf7uVEvgpnpMF6GWHVVckmdLHUSFmoZDNiNShg0t6E5HzVhWsXEVbg6Dok4'); background-size: cover; background-position: center;"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
 <div class="absolute bottom-0 left-0 p-8">
 <h3 class="font-headline-md text-headline-md text-stark-white mb-2">Indian Spices</h3>
@@ -337,7 +337,7 @@
 </div>
 <!-- Product 3 -->
 <div class="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer" onclick="window.location.href='products.html'">
-<div class="absolute inset-0 bg-black/10" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uiArWmXunhhWSivbaoZEPzpXxyu9nlte5plX6OPqMEgfSQgabbfEd30Uo7iMQ2anz-YsCcb-QQ5Ngoqbwb2CyN289W0d_seVjm0Gs8W1o5yemqJmBWww9V7pNoyfrM8gJGK7dGj6wDUc9sxSuX2HwLfQ5iSqobrH2rdTiflOVC5e7T04QTJPHS3dQyz8WRWLF_DnUl_3A7R913FVthB_faSD2FTStSuQby1Oe1c_bxsjxkGbGYoVDzc-fA'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black/10" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uiArWmXunhhWSivbaoZEPzpXxyu9nlte5plX6OPqMEgfSQgabbfEd30Uo7iMQ2anz-YsCcb-QQ5Ngoqbwb2CyN289W0d_seVjm0Gs8W1o5yemqJmBWww9V7pNoyfrM8gJGK7dGj6wDUc9sxSuX2HwLfQ5iSqobrH2rdTiflOVC5e7T04QTJPHS3dQyz8WRWLF_DnUl_3A7R913FVthB_faSD2FTStSuQby1Oe1c_bxsjxkGbGYoVDzc-fA'); background-size: cover; background-position: center;"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
 <div class="absolute bottom-0 left-0 p-8">
 <h3 class="font-headline-md text-headline-md text-stark-white mb-2">Organic Spices</h3>
@@ -443,7 +443,7 @@
 </section>
 <!-- Footer -->
 <footer class="bg-tertiary-container dark:bg-primary-container text-stark-white font-body-md text-body-md rounded-none border-t border-outline-variant/5 flat no shadows reveal">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap-mobile md:py-section-gap max-w-container-max mx-auto">
 <div class="mb-8 md:mb-0">
 <div class="font-headline-lg text-headline-lg text-champagne-gold mb-6 font-serif">Europa Foods</div>
 <p class="text-on-tertiary-container mb-6">Premium Dehydrated Foods &amp; Spices for the Global Market.</p>
@@ -474,7 +474,7 @@
 </ul>
 </div>
 </div>
-<div class="border-t border-outline-variant/10 px-margin-desktop py-8 max-w-container-max mx-auto text-center md:text-left text-on-tertiary-container text-sm">
+<div class="border-t border-outline-variant/10 px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto text-center md:text-left text-on-tertiary-container text-sm">
             © 2024 Europa Foods Global Exports. All rights reserved.
         </div>
 </footer>
@@ -513,4 +513,5 @@
         }
     });
 </script>
+<script src="mobile-nav.js"></script>
 </body></html>
