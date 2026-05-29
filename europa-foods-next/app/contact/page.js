@@ -94,9 +94,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-label-caps text-label-caps text-champagne-gold mb-2">DIRECT LINE</h3>
                       <p className="font-body-md text-body-md text-stark-white">
-                        +91 98765 43210 (Global Sales)
+                        +91 70412 26666
                       </p>
-                      <a className="inline-flex items-center gap-2 mt-2 text-champagne-gold hover:text-secondary-fixed-dim transition-colors" href="#">
+                      <a className="inline-flex items-center gap-2 mt-2 text-champagne-gold hover:text-secondary-fixed-dim transition-colors" href="https://wa.me/917041226666" target="_blank" rel="noopener noreferrer">
                         <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
                       </a>
                     </div>

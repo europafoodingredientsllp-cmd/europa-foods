@@ -109,47 +109,7 @@ export default function ShipmentsPage() {
         </div>
       </section>
 
-      {/* Tracking Inquiry & Map Section */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap-mobile md:py-section-gap">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-          {/* Map Side */}
-          <div className="h-[600px] bg-surface-variant border border-deep-navy/10 relative overflow-hidden order-2 md:order-1">
-            <div className="absolute inset-0 bg-deep-navy/5 mix-blend-multiply z-10 pointer-events-none"></div>
-            <img alt="Shipping Routes Map" className="w-full h-full object-cover object-center grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD6ZHSPt8ShHkT8LAHdGuosX7uAPjLL3ZEgXbk7xRRKdZIOLYS1OZlPuEDXr2ZV13bYs8d5CjI1QLy5dCtL3usM0Jazp7l4RwUWyoNZabOvJr3NHhGGfstiGbst7SFzK_ftK-be0SAt7qgMATr53v_SKEQ1b8D6oqUsZlTR9zeZu43oiuxhJp4BwYZFcUDfg_9M1k-_WJQu1jlwGBGvZDC5kaSatzYz5A4-BJAeOIcRqB0sgHKvGDPNx171CuEuJRqBbvKbnKRW2xp"/>
-            {/* Overlay Elements on Map */}
-            <div className="absolute bottom-6 left-6 z-20 bg-stark-white/90 backdrop-blur-sm p-4 border border-deep-navy/10">
-              <span className="font-label-caps text-label-caps text-deep-navy flex items-center gap-2">
-                <span className="material-symbols-outlined text-champagne-gold" style={{ fontSize: "16px" }}>public</span>
-                Live Network Status: Optimal
-              </span>
-            </div>
-          </div>
-          {/* Inquiry Form Side */}
-          <div className="bg-stark-white p-12 md:p-16 border border-deep-navy/10 order-1 md:order-2 h-full flex flex-col justify-center">
-            <span className="font-label-caps text-label-caps text-champagne-gold block mb-4 uppercase tracking-widest">Shipment Status</span>
-            <h2 className="font-headline-lg text-headline-lg text-deep-navy mb-8">Track Inquiry</h2>
-            <form className="space-y-6">
-              <div>
-                <label className="block font-label-caps text-label-caps text-deep-navy mb-2" htmlFor="bol-number">Bill of Lading (B/L) Number</label>
-                <input className="w-full bg-transparent border border-outline-variant text-body-md text-deep-navy py-4 px-4 focus:ring-0 focus:border-champagne-gold focus:border-2 transition-all outline-none rounded-none placeholder:text-outline-variant" id="bol-number" placeholder="e.g. EUF-2024-9876" type="text"/>
-              </div>
-              <div>
-                <label className="block font-label-caps text-label-caps text-deep-navy mb-2" htmlFor="company-id">Company Reference ID</label>
-                <input className="w-full bg-transparent border border-outline-variant text-body-md text-deep-navy py-4 px-4 focus:ring-0 focus:border-champagne-gold focus:border-2 transition-all outline-none rounded-none placeholder:text-outline-variant" id="company-id" placeholder="Optional" type="text"/>
-              </div>
-              <div className="pt-4">
-                <button className="w-full bg-champagne-gold text-deep-navy px-6 py-4 rounded-[6px] font-label-caps text-label-caps hover:opacity-80 transition-opacity flex items-center justify-center gap-2" type="button">
-                  <span className="material-symbols-outlined" style={{ fontSize: "20px" }}>search</span>
-                  Locate Shipment
-                </button>
-              </div>
-            </form>
-            <p className="font-body-md text-body-md text-on-surface-variant mt-8 text-sm">
-              For detailed customs documentation or temperature logs, please contact your dedicated account manager directly.
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
       <WhatsAppButton />

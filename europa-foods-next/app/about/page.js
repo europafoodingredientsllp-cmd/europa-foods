@@ -128,12 +128,16 @@ export default function AboutPage() {
             </div>
             {/* Profile Card */}
             <div className="group relative overflow-hidden bg-warm-cream border border-outline-variant/20 p-4">
-              <div className="aspect-[3/4] w-full overflow-hidden mb-6 bg-surface-container flex items-center justify-center border border-outline-variant/10">
-                <span className="material-symbols-outlined text-deep-navy/30 text-8xl font-light">person</span>
+              <div className="aspect-[3/4] w-full overflow-hidden mb-6 bg-surface-container">
+                <img
+                  alt="Mr. Mihir Gajera Portrait"
+                  className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  src="/images/Mr. MihirGajera.jpeg"
+                />
               </div>
               <div className="text-center">
-                <h3 className="font-headline-md text-headline-md text-deep-navy">Partner</h3>
-                <p className="font-label-caps text-label-caps text-champagne-gold uppercase tracking-widest mt-1">Head of Quality Assurance</p>
+                <h3 className="font-headline-md text-headline-md text-deep-navy">Mr. Mihir Gajera</h3>
+                <p className="font-label-caps text-label-caps text-champagne-gold uppercase tracking-widest mt-1">Partner & Head of QA</p>
               </div>
             </div>
           </div>

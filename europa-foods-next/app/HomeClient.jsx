@@ -66,7 +66,9 @@ export default function HomeClient() {
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div className="relative group">
-                <img alt="Editorial shot of premium spices" className="w-full h-auto object-cover rounded shadow-lg transition-transform duration-700 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/ADBb0uhAraeKxGAMpL8WBNzWBewniHayMdnFsRz_g9sBFGOSZZr0dcyRTv10auPNhiJ-QXai31Nlzk49BRx0K-bSf-5Nka6Y-PAzf9yv9nwTEMiJlQbXmrBraQs5BnGZ98SuTOxuoF5H2PhDkkmiB2G-l5bRgmg-ZcX9gAXoH0Q7y6uymhITZ5Ym2IbEQzkwlr8p6Qnm1gn806bNh-I-RtY6g455b2xoprhdveMIqHIq5y7bq7sb5-LKbD0VOKzj" />
+                <video autoPlay loop muted playsInline className="w-full h-auto object-cover rounded shadow-lg transition-transform duration-700 group-hover:scale-[1.02]">
+                  <source src="/images/3 decades.mp4" type="video/mp4" />
+                </video>
                 <div className="absolute inset-0 border border-deep-navy/10 rounded mix-blend-multiply pointer-events-none"></div>
               </div>
               <div>
@@ -142,10 +144,10 @@ export default function HomeClient() {
         <section className="py-section-gap-mobile md:py-section-gap bg-stark-white">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
             <h2 className="font-headline-xl text-headline-xl text-deep-navy mb-16 text-center">What We Offer</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
               {/* Product 1 */}
-              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block">
-                <img alt="Dehydrated Vegetables" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uil-besbhI09R0u54Rrjs4Jl2F9PC6mz3mRI_Se8yj4fCrp6_xCZ8BWXDqiULbMaeopo0DIfQw69N9R7e91kVajgyOq9FKxM6fmnwJyX3nO_RYjfwj3DzCdgrTDU9iRBthHfYLYMFlY0wMsQIaMEOfJJ3jYMwQfiPfZrlpVpaHh1_kAv6ZAUazZSHoobMnhSAVesj-0GiYGsvdeMUZQWKhZhoHxsDa7tkT3YQ1EebPBRT3WXyPkzWq_XPzp" />
+              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block w-full col-span-1 md:col-span-1 lg:col-span-2">
+                <img alt="Dehydrated Vegetables" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/images/Dehydrated Vegetables.jpeg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8">
                   <h3 className="font-headline-md text-headline-md text-stark-white mb-2">Dehydrated Vegetables</h3>
@@ -153,8 +155,8 @@ export default function HomeClient() {
                 </div>
               </Link>
               {/* Product 2 */}
-              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block">
-                <div className="absolute inset-0 bg-black/10" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida/ADBb0uguNOfuDNq32MKnKBkK7RU5F34oz8zywm1sIf3dKGvU563icjg0RsSz5BqUFDf1wITfPMrosvY1GTblHbmLOWtgo99aZC2HIdEnRMYHqh7nBo2FBZjzVhhJr8sZLkILcZ3j1ToZ5XwGp8gTY67a4KjLqFECHPuG1fOO3ROPFiEOynF69QWjI9oaNtllytupLFf7uVEvgpnpMF6GWHVVckmdLHUSFmoZDNiNShg0t6E5HzVhWsXEVbg6Dok4')", backgroundSize: "cover", backgroundPosition: "center" }}></div>
+              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block w-full col-span-1 md:col-span-1 lg:col-span-2">
+                <img alt="Indian Spices" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/images/Indian SPices.jpeg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8">
                   <h3 className="font-headline-md text-headline-md text-stark-white mb-2">Indian Spices</h3>
@@ -162,8 +164,8 @@ export default function HomeClient() {
                 </div>
               </Link>
               {/* Product 3 */}
-              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block">
-                <div className="absolute inset-0 bg-black/10" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida/ADBb0uiArWmXunhhWSivbaoZEPzpXxyu9nlte5plX6OPqMEgfSQgabbfEd30Uo7iMQ2anz-YsCcb-QQ5Ngoqbwb2CyN289W0d_seVjm0Gs8W1o5yemqJmBWww9V7pNoyfrM8gJGK7dGj6wDUc9sxSuX2HwLfQ5iSqobrH2rdTiflOVC5e7T04QTJPHS3dQyz8WRWLF_DnUl_3A7R913FVthB_faSD2FTStSuQby1Oe1c_bxsjxkGbGYoVDzc-fA')", backgroundSize: "cover", backgroundPosition: "center" }}></div>
+              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block w-full col-span-1 md:col-span-1 lg:col-span-2">
+                <img alt="Organic Spices" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/images/Organic Spices.jpeg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8">
                   <h3 className="font-headline-md text-headline-md text-stark-white mb-2">Organic Spices</h3>
@@ -171,8 +173,8 @@ export default function HomeClient() {
                 </div>
               </Link>
               {/* Product 4 */}
-              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer lg:col-span-1 lg:col-start-2 block">
-                <img alt="Organic Herbs" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ugPMKmH4fZucdu2olkuoAJXo_U18zftHu0_cGHRtp1qFT4VuJbENEjfqcPEfZ5HzKwH7sA2QtJgt0naF2tpp_LKqv_J3GS8fsgLQA09TUP-0NOPZ0vA95hPaLZEZ4uy77vNpeMpw1Gcw-ion-N6acRixIPvvkOWyPuJSSoOx3qeyuArazHGqr-OGdNTG4w92gA-UbxKZZFuZEle6u-Oz0MIjzst0pqP7KRL9t-A_06hPdtRcYAPbJfpveI" />
+              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block w-full col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-2">
+                <img alt="Organic Herbs" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/images/Organic Herbs.jpeg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8">
                   <h3 className="font-headline-md text-headline-md text-stark-white mb-2">Organic Herbs</h3>
@@ -180,8 +182,8 @@ export default function HomeClient() {
                 </div>
               </Link>
               {/* Product 5 */}
-              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer lg:col-span-1 block">
-                <img alt="Spray Dried Powders" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uho1ekKhk5bhleRjiyq8-hwMDm5Io4I6x1DMYwi88EUiSSJpRomHpEEJF-gDiv7zacZNMfXRpbfmaOkVi9IHB55sQ-MCsD1l8EW7_tIf1CwwSyUHbbrccEMoRkIKolMwmJuMLe9StD3u1Z-kpBPVw5jlh7ksKvqbbo7ufcSoTwW30WEzqgHn3ejxCPiUXn74swCqVZmE0wnNwqznuu1OxAx6-6ib3HBkVk_T7hydXuzD-38NgLYlPKLpnY" />
+              <Link href="/products" className="group relative overflow-hidden rounded bg-warm-cream border border-outline-variant/20 aspect-[3/4] cursor-pointer block w-full col-span-1 md:col-span-2 lg:col-span-2">
+                <img alt="Spray Dried Powders" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/images/Spray Dried Vegetable and powder.jpeg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/80 via-deep-navy/20 to-transparent transition-opacity duration-300 group-hover:opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8">
                   <h3 className="font-headline-md text-headline-md text-stark-white mb-2">Spray Dried Powders</h3>
