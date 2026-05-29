@@ -67,7 +67,7 @@ export default function ContactPage() {
               <div>
                 <h1 className="font-headline-xl text-headline-xl mb-6 text-champagne-gold">Get in Touch</h1>
                 <p className="font-body-lg text-body-lg text-on-primary-container mb-12 max-w-md">
-                  Connect with our team to discuss premium European food exports. We offer bespoke solutions for global partners.
+                  Connect with our team to discuss premium Europa Foods LLP. We offer bespoke solutions for global partners.
                 </p>
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
@@ -75,8 +75,8 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-label-caps text-label-caps text-champagne-gold mb-2">HEADQUARTERS</h3>
                       <p className="font-body-md text-body-md text-stark-white">
-                        Europa Foods Global Exports<br/>
-                        Mahuva, Gujarat, India<br/>
+                        Europa Foods LLP<br />
+                        Mahuva, Gujarat, India<br />
                         Global Operations Center
                       </p>
                     </div>
@@ -111,20 +111,20 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="font-label-caps text-label-caps text-deep-navy" htmlFor="firstName">FIRST NAME</label>
-                    <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="firstName" name="firstName" placeholder="Enter first name" type="text" value={formData.firstName} onChange={handleChange} required/>
+                    <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="firstName" name="firstName" placeholder="Enter first name" type="text" value={formData.firstName} onChange={handleChange} required />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label className="font-label-caps text-label-caps text-deep-navy" htmlFor="lastName">LAST NAME</label>
-                    <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="lastName" name="lastName" placeholder="Enter last name" type="text" value={formData.lastName} onChange={handleChange} required/>
+                    <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="lastName" name="lastName" placeholder="Enter last name" type="text" value={formData.lastName} onChange={handleChange} required />
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="font-label-caps text-label-caps text-deep-navy" htmlFor="companyName">COMPANY NAME</label>
-                  <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="companyName" name="companyName" placeholder="Your organization's name" type="text" value={formData.companyName} onChange={handleChange} required/>
+                  <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="companyName" name="companyName" placeholder="Your organization's name" type="text" value={formData.companyName} onChange={handleChange} required />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="font-label-caps text-label-caps text-deep-navy" htmlFor="email">CORPORATE EMAIL</label>
-                  <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="email" name="email" placeholder="name@company.com" type="email" value={formData.email} onChange={handleChange} required/>
+                  <input className="bg-stark-white border border-deep-navy/10 rounded-none px-4 py-3 font-body-md focus:outline-none focus:border-champagne-gold focus:ring-1 focus:ring-champagne-gold transition-all" id="email" name="email" placeholder="name@company.com" type="email" value={formData.email} onChange={handleChange} required />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="font-label-caps text-label-caps text-deep-navy" htmlFor="inquiryType">INQUIRY TYPE</label>
@@ -157,7 +157,7 @@ export default function ContactPage() {
         {/* Map Section */}
         <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap-mobile md:pb-section-gap">
           <div className="w-full h-[400px] border border-outline-variant/10 relative overflow-hidden bg-surface-container">
-            <img alt="Map" className="w-full h-full object-cover opacity-80 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRMejLJq0ZJKi95QQGHlCk7BpUpndpXgY-Gt92Hxzm4KSbkHOSMYcCWrPe1FQLxS8GQAuByv7OuI1FxM7K-hxk1sNosbdsCqi_MKJq83WkT9yIjCkJVuJNk94CiIDVFjZy92I2d5navDa7Lbe3Luw0TlIDNwjTNQuPl5mYCj3bmtlPskLPlKAoyVG39--GMhcF3nu_cZ_CUk3cKUNPIVqfxd9QI4FXuukDDnRwPr49CvzBH7cuAl_cTfRtqeWq8LDXR79ECK7db1vx"/>
+            <img alt="Map" className="w-full h-full object-cover opacity-80 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRMejLJq0ZJKi95QQGHlCk7BpUpndpXgY-Gt92Hxzm4KSbkHOSMYcCWrPe1FQLxS8GQAuByv7OuI1FxM7K-hxk1sNosbdsCqi_MKJq83WkT9yIjCkJVuJNk94CiIDVFjZy92I2d5navDa7Lbe3Luw0TlIDNwjTNQuPl5mYCj3bmtlPskLPlKAoyVG39--GMhcF3nu_cZ_CUk3cKUNPIVqfxd9QI4FXuukDDnRwPr49CvzBH7cuAl_cTfRtqeWq8LDXR79ECK7db1vx" />
             {/* Map overlay card */}
             <div className="absolute bottom-8 left-8 bg-stark-white p-6 border border-outline-variant/10 shadow-sm max-w-sm">
               <h3 className="font-headline-md text-headline-md text-deep-navy mb-2">Global Operations</h3>
@@ -166,7 +166,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <WhatsAppButton />
     </div>

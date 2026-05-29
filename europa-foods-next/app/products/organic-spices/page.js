@@ -1,47 +1,57 @@
 import CategoryPageTemplate from "@/components/CategoryPageTemplate";
 
-const tabs = ["All", "Pepper", "Turmeric", "Cumin", "Cardamom", "Ginger"];
+const tabs = ["All", "Cumin", "Turmeric", "Coriander", "Fennel", "Ginger", "Cinnamon"];
 
 const products = [
   {
-    name: "Organic Black Pepper",
-    tag: "Pepper",
-    image: "https://images.unsplash.com/photo-1509358271058-acd22cc93898?q=80&w=600&auto=format&fit=crop",
-    description: "Certified organic black peppercorns grown without chemical fertilizers or pesticides.",
-  },
-  {
-    name: "Organic Turmeric Powder",
-    tag: "Turmeric",
-    image: "https://images.unsplash.com/photo-1615485500905-ac56f4d2f09a?q=80&w=600&auto=format&fit=crop",
-    description: "Pristine organic turmeric powder with preserved high curcumin levels.",
-  },
-  {
-    name: "Organic Cumin Seed",
+    name: "Organic Cumin",
     tag: "Cumin",
-    image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?q=80&w=600&auto=format&fit=crop",
-    description: "Pure, certified organic cumin seeds offering rich aroma and chemical-free safety.",
+    image: "/images/Product%20Images/Organic%20Spices/Cumin.png",
+    description: "Certified organic cumin seeds, free-flowing and machine sorted for 99.5% purity. Aromatic, earthy, and cultivated without chemical fertilizers.",
+    loadingCapacity: "15 - 16 MT in 20ft container."
   },
   {
-    name: "Organic Green Cardamom",
-    tag: "Cardamom",
-    image: "https://images.unsplash.com/photo-1599940794939-ee3600f9a263?q=80&w=600&auto=format&fit=crop",
-    description: "Premium aromatic cardamom pods grown in chemical-free organic estates.",
+    name: "Organic Turmeric",
+    tag: "Turmeric",
+    image: "/images/Product%20Images/Organic%20Spices/Turmeric.png",
+    description: "High curcumin content organic turmeric, offering deep gold color and earthy heat. Sourced from certified estates in pristine agricultural zones.",
+    loadingCapacity: "18 - 20 MT in 20ft container."
   },
   {
-    name: "Organic Ginger Root",
+    name: "Organic Coriander",
+    tag: "Coriander",
+    image: "/images/Product%20Images/Organic%20Spices/Coriander.png",
+    description: "Carefully harvested organic coriander seeds, boasting strong volatile oil content, pleasant citrus-spice aroma, and pesticide-free purity.",
+    loadingCapacity: "10 - 11 MT in 20ft container (due to high volume)."
+  },
+  {
+    name: "Organic Fennel",
+    tag: "Fennel",
+    image: "/images/Product%20Images/Organic%20Spices/Fennel.png",
+    description: "Sweet, licorice-scented organic fennel seeds. Cleaned and sortex-sorted. Sourced from farms adhering strictly to organic crop rules.",
+    loadingCapacity: "12 - 13 MT in 20ft container."
+  },
+  {
+    name: "Organic Ginger",
     tag: "Ginger",
-    image: "https://images.unsplash.com/photo-1582515073490-39981397c445?q=80&w=600&auto=format&fit=crop",
-    description: "Zesty organic ginger root, cleaned and prepared for export under clean standards.",
+    image: "/images/Product%20Images/Organic%20Spices/Ginger.png",
+    description: "Certified organic dried ginger whole and powder, offering a sharp zesty heat and excellent microbiological safety metrics.",
+    loadingCapacity: "14 - 15 MT in 20ft container."
   },
+  {
+    name: "Organic Cinnamon",
+    tag: "Cinnamon",
+    image: "/images/Product%20Images/Organic%20Spices/Cinnamon.png",
+    description: "Highly aromatic organic cinnamon rolls and powder, boasting sweet woody notes. Processed gently under strict non-chemical clean conditions.",
+    loadingCapacity: "12 MT in 20ft container."
+  }
 ];
 
 const theme = {
   banner: "bg-gradient-to-r from-[#825C22] to-[#B78A39]",
   accentText: "text-[#B78A39]",
   accentBorder: "border-[#B78A39]",
-  buttonHoverBg: "hover:bg-[#B78A39] hover:text-stark-white",
-  buttonHoverBorder: "hover:border-[#B78A39]",
-  badge: "bg-amber-50 text-amber-700 border-amber-200",
+  badge: "bg-amber-50 text-amber-700 border-amber-200"
 };
 
 export default function OrganicSpicesPage() {

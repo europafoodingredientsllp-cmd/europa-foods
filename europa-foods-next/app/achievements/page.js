@@ -23,7 +23,7 @@ export default function AchievementsPage() {
                 Excellence Delivered <br />Across Borders.
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
-                For over decade, Europa Foods has established an uncompromising standard in global food export. Our achievements are measured not just in tonnage, but in the enduring partnerships we build across continents, delivering the essence of European culinary heritage to the world&apos;s most discerning markets.
+                For over decade, Europa Foods has established an uncompromising standard in global food export. Our achievements are measured not just in tonnage, but in the enduring partnerships we build across continents, delivering the essence of Indian culinary heritage to the world&apos;s most discerning markets.
               </p>
             </div>
             <div className="lg:col-span-5 h-[500px] w-full relative bg-warm-cream border border-outline-variant/10 overflow-hidden">

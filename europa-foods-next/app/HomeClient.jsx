@@ -72,13 +72,20 @@ export default function HomeClient() {
                 <div className="absolute inset-0 border border-deep-navy/10 rounded mix-blend-multiply pointer-events-none"></div>
               </div>
               <div>
-                <h2 className="font-headline-xl text-headline-xl text-deep-navy mb-8">Three Decades of Excellence</h2>
+                <h2 className="font-headline-xl text-headline-xl text-deep-navy mb-8">12 Years of Excellence</h2>
                 <ul className="space-y-6 mb-10">
                   <li className="flex items-start">
                     <span className="material-symbols-outlined text-champagne-gold mr-4 text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                     <div>
                       <h3 className="font-body-lg text-body-lg font-semibold text-deep-navy">100% Pesticide Free</h3>
                       <p className="text-on-surface-variant mt-1">Sourced directly from certified organic farms.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="material-symbols-outlined text-champagne-gold mr-4 text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                    <div>
+                      <h3 className="font-body-lg text-body-lg font-semibold text-deep-navy">Integrated Pest Management</h3>
+                      <p className="text-on-surface-variant mt-1">Working with a group of farmers to apply integrated pest management systems.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
